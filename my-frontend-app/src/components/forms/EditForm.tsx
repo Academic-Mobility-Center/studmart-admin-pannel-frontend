@@ -1,12 +1,5 @@
-import { FormInstance, Form } from "antd";
-import FormProps from "../../types/FormProps";
-
-interface EditFormProps{
-    children: React.ReactNode;
-    form: FormInstance<any>;
-    handleSubmit: () => void;
-    formProps: FormProps;
-}
+import { Form } from "antd";
+import EditFormProps from "../../types/EditFormProps";
 
 const EditForm: React.FC<EditFormProps> = ({
     children,
@@ -14,6 +7,7 @@ const EditForm: React.FC<EditFormProps> = ({
     handleSubmit,
     formProps
 }) => {
+    
     return(        
         <Form
             layout="vertical"
