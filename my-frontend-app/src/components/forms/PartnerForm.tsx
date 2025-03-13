@@ -222,7 +222,11 @@ const PartnerForm: React.FC<PartnerFormProps> = ({
                     onChange={(value) => handleChange("serviceRegion", value)} 
                 />
             </Form.Item>
-            <Form.Item label="Страна представления">
+            <Form.Item 
+                label="Страна представления"
+                name="country"
+                rules={[{ required: false }]}
+            >
                 <Select 
                     value={formProps.country} 
                     options={regionSelectProps} 
