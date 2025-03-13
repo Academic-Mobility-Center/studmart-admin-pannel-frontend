@@ -1,10 +1,5 @@
-import { FormInstance, Form } from "antd";
-
-interface CreationPageProps{
-    children: React.ReactNode;
-    form: FormInstance<any>;
-    handleSubmit: () => void;
-}
+import { Form } from "antd";
+import CreationPageProps from "../../types/CreationPageProps";
 
 const CreationPage: React.FC<CreationPageProps> = ({
     children,
